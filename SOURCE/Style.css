@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.flex-nav 
+{
+    overflow: visible;
+    z-index: 100;
+    background-color: rgba(93,73,50, 1);
+    border-radius:0 0 25px 25px;
+    border: 3px solid transparent;
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
+.flex-nav button 
+{
+    background-color: transparent;
+    border-color: transparent;
+}
+.flex-nav ul li
+{ 
+    padding: 20px 50px;
+    align-items: center;
+    display: inline-block;
+    list-style-type: none;
+    align-self: center;
+    align-content: space-between;
+}
+.flex-nav nav 
+{
+    text-align: center;
+}
+
+.flex-nav ul a 
+{
+    color: black;
+}
+
+.flex-nav ul a:hover
+{
+   transition-duration: 1.3s;
+   color: aqua;
+}
+section
+ {
+    display: contents;
+    height: 100%;
+ }
+.container 
+{
+    grid-template-columns: 300px 100%;
+    row-gap: 7px;
+    column-gap: 5px;
+    display: grid;
+    border: 1px solid transparent;
+    box-shadow: 10px 5px 5px rgba(146, 255, 150, 0.65);
+    height: 500px;
+}
+svg circle
+{
+    overflow: visible;
+}
+
+/*#region Main Section*/
+.container div[class^="item"] 
+{
+    cursor: pointer;
+    display:flex;
+    max-width: 100%;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: green;
+    justify-content: center;
+}
+.container div[class^="item"] p 
+{
+
+    max-width: fit-content;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+.Main 
+{
+    border-radius: 10px 0 0;
+    align-items: center;
+
+    display: flex;
+    background-color: green;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row: 1 / 4;
+}
+.Main .Image-slider 
+{
+    width: 70vw;
+}
+.Main button[class|="navbutton"]
+{
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    border-color: transparent;
+    width: 2rem;
+    background-color: transparent;
+}
+
+.navbutton-L:hover 
+{
+    animation: ArrowBounceLeft  infinite 0.5s;
+}
+
+.navbutton-R:hover 
+{
+    animation: ArrowBounceRight infinite 0.5s;
+}
+/*#endregion*/
+
+/*#region KEYFRAMES*/
+@keyframes ArrowBounceLeft 
+{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(-10%);}
+    100% {transform:translateX(0%);}
+}
+@keyframes ArrowBounceRight 
+{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(-10%);}
+    100% {transform:translateX(0%);}
+}
+
+/*#endregion*/

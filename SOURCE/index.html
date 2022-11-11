@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étterem</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="Script(PROTO).js"></script>
+
+</head>
+
+<body>
+
+    <div class="flex-nav">
+        <nav>
+            <ul>
+                <a href="#"><li>Ételek</li></a>
+                <a href="#"><li>Italok</li></a>
+                <svg height="60" width="350"><image href="./PLACEHOLDER.svg" height="70" width="350"></image><circle cx="175" cy="75" r="40" stroke="rgba(93,73,50, 1)" stroke-width="3" fill="rgba(93,73,50, 1)"></circle></svg>
+                <a href="#menu"><li>Napi menü</li></a> 
+                <a href="#"><button>Elérhetőségek</button></a>
+            </ul>
+           
+        </nav>
+    </div>
+
+    <!--Main Section/Food list-->
+        <section id="menu">
+        <div class="container">
+            <div class="item-1"><p>Levesek</p></div>
+            <div class="item-2"><p>Főételek</p></div>
+            <div class="item-3"><p>Desszertek</p></div>
+            <!--A képek ebbe a divbe mennek-->
+            <div class="Main">
+                <button class="navbutton-L">←</button>
+                <div class="Image-slider"></div>
+                <button class="navbutton-R">→</button>
+            </div>
+        </section>
+
+    
+    <!-- #region Scroll reveal JS -->
+    <script>
+        var sr = ScrollReveal({
+            origin: 'top',
+            distance: '40px',
+            duration: 2000,
+            reset: true
+        })
+
+        sr.reveal('.flex-nav',{reset:false});
+        
+    </script>
+    <!--#endregion-->
+</body>
+
+</html>
