@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étterem</title>
+    <link rel="stylesheet" href="./Style.css">
+    <style>
+        h1,
+        h2,
+        main > p,form {
+            color: rgba(158, 163, 82, 0.5);
+            padding: 17px;
+            text-align: center;
+            font-size: 2em;
+        }
+        form 
+        {
+            max-width: 30vw;
+            margin: 14px auto;
+            border: 1px solid transparent;
+            background-color: rgba(203,54,54,0.5);
+        }
+
+        a {
+            color: rgba(158, 163, 82, 0.5);
+            text-decoration: none;
+        }
+         input 
+         {
+            border: 1px solid transparent;
+            background-color: rgba(221, 65, 88, 0.6);
+            width: 20vw;
+            height:35%;
+            color: aliceblue;
+            font-size: 0.54em;
+         }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Éttermünk</h1>
+        <h2>Nyitvatartás:</h2>
+        <p>H-P: 12:00 - 23:00</p>
+        <p>Sz,V:12:00 - 18:00</p>
+        <h1>Rendelési felvétel:</h1>
+        <p>+36 20 546 8433</p>
+        <p>Asztalfoglalás: +36 20 546 8433</p>
+        <h1>Kapcsolat:</h1>
+        <p>
+            <img src="./Étterem/Images/Fb.png" alt="Fb" height="32" width="40">
+            <a href="">: https://facebook.com/groups/3472391567</a>
+        </p>
+        <p>
+            <img src="./Étterem/Images/insta.jpg" alt="Instagram" height="30" width="30">
+            <a href="#">:https://www.instagram.com/MekoAndiOfficial</a>
+        </p>
+        <p><img src="./Étterem/Images/email.png" alt="" width="30" height="30">
+            <a href="#">:mekoandietterem@gmail.com</a>
+        </p>
+        <h1>Foglaljon asztalt online!</h1>
+        <form action="">
+            <fieldset>
+                <label for="nev">Vezetéknév:</label><br>
+                <input type="text" name="nev" id="fnev"><br>
+                <label for="knev">Keresztnév:</label><br>
+                <input type="text" name="knev" id="knev" ><br>
+                <label for="tszam">Telefonszám:</label><br>
+                <input type="tel" name="telephone" id="telephone"><br>
+                <label for="asztal">Hány asztalt szeretne lefoglalni?</label><br>
+                <input type="number" name="table" id="table" min="1" max="10"><br>
+                <input type="button" value="Küldés" style="border-radius:10px;max-width:15vw;padding:10px;margin:20px;">
+            </fieldset>
+        </form>
+
+        <footer>
+            <a href="./nyilatkozat.html" style="text-decoration: none; color:black;">
+                <p>Adatvédelem</p>
+            </a>
+            <p> Szerződési Feltételek</p>
+            <a href="./Contact.html">
+                <p>Elérhetőségek</p>
+            </a>
+            <a href="./index.html">
+                <p>Mekó Andi Étterem<sup>®</sup></p>
+            </a>
+        </footer>
+    </main>
+</body>
+
+</html>

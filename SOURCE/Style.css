@@ -3,37 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-    background: url(./BG.jpg);
+    background: url(./Étterem/Images/BG.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
 
-main 
-{
-    background-color: rgba(59, 59, 59, 0.65);
+main {
+    background-color: rgba(12, 12, 12, 0.65);
     margin: auto;
     width: 1192px;
 }
-.flex-nav 
-{
+
+.flex-nav {
     overflow: visible;
     z-index: 100;
-    background-color: rgba(153, 75, 76, 0.806);
+    background-color: rgba(240, 200, 144, 0.94);
     border: 2px solid transparent;
     top: 0;
     width: 100%;
     position: sticky;
 }
-.flex-nav button 
-{
+
+.flex-nav button {
     background-color: transparent;
     border-color: transparent;
 }
-.flex-nav ul li
-{ 
+
+.flex-nav ul li {
     padding: 20px 50px;
     align-items: center;
     display: inline-block;
@@ -41,54 +41,51 @@ main
     align-self: center;
     align-content: space-between;
 }
-.flex-nav nav 
-{
+
+.flex-nav nav {
     text-align: center;
 }
 
-.flex-nav ul a 
-{
+.flex-nav ul a {
     color: black;
 }
 
-.flex-nav ul a:hover
-{
-   transition-duration: 1.3s;
-   color: aqua;
+.flex-nav ul a:hover {
+    transition-duration: 1.3s;
+    color: aqua;
 }
-.container 
-{
-    margin: auto;
+
+.container {
+    margin: 10px auto;
     max-width: min-content;
-    grid-template-columns: 200px 100%;
+    grid-template-columns: 196px 100%;
     row-gap: 3px;
     column-gap: 4px;
     display: grid;
     height: 500px;
+    color: rgba(203,54,54,0.78);
 }
 
 /*#region Main Section*/
-.container div[class^="item"] 
-{
+.container div[class^="item"] {
     cursor: pointer;
-    display:flex;
+    display: flex;
     max-width: 100%;
     align-items: center;
     border-radius: 4px;
-    border: 2px solid rgba(221,181, 94, 0.78);
+    border: 2px solid rgba(221, 181, 94, 0.78);
     background-color: transparent;
     justify-content: center;
     transition: transform 0.43s ease-in-out;
-}
-.container div[class^="item"]:hover
-{
-    text-decoration: underline;
-    transform: translateX(-5px);
-    
+    background-color:rgba(108, 105, 60, 0.321);;
 }
 
-.container div[class^="item"] p 
-{
+.container div[class^="item"]:hover {
+    text-decoration: underline;
+    transform: translateX(-5px);
+}
+
+.container div[class^="item"] p {
     font: 1.54em sans-serif;
     max-width: fit-content;
     text-align: center;
@@ -96,23 +93,22 @@ main
 }
 
 
-#Main 
-{
+#Main {
     border-radius: 10px 0 0;
     align-items: center;
     position: relative;
     display: flex;
     grid-column-start: 2;
     grid-row: 1 / 4;
-    width: 79.65%;
-    background-size:cover;
+    width: 60vw;
+    background-size: cover;
 }
-#Main .Image-slider 
-{
+
+#Main .Image-slider {
     width: 60vw;
 }
-#Main button[class|="navbutton"]
-{
+
+#Main button[class|="navbutton"] {
     text-align: center;
     height: 100%;
     cursor: pointer;
@@ -124,23 +120,25 @@ main
 
     background-color: transparent;
 }
-.navbutton-L{
+
+.navbutton-L {
     position: absolute;
     left: 5%;
 }
-.navbutton-R{
+
+.navbutton-R {
     position: absolute;
     right: 5%;
 }
-.navbutton-L:hover 
-{
-    animation: ArrowBounceLeft  infinite 0.54s;
+
+.navbutton-L:hover {
+    animation: ArrowBounceLeft infinite 0.54s;
 }
 
-.navbutton-R:hover 
-{
+.navbutton-R:hover {
     animation: ArrowBounceRight infinite 0.54s;
 }
+
 #navigation {
     position: absolute;
     bottom: 0;
@@ -150,56 +148,58 @@ main
     display: flex;
     justify-content: center;
 }
-.btn{
-    position:absolute;
+
+.btn {
+    position: absolute;
     width: 0.2em;
     height: 0.2em;
     border: 0.4em solid black;
     background-color: black;
     border-radius: 50%;
 }
-#selected{
-    position:absolute;
+
+#selected {
+    position: absolute;
     width: 1.1em;
     height: 1.1em;
     border: 0.1em solid black;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0);
 }
+
 /*#endregion*/
 
 /*#region footer*/
-footer 
-{
+footer {
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.86);
+    background-color: rgba(0, 0, 0, 0.96);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px;
 }
-footer p 
-{
-    color:rgba(255, 255, 255, 0.72);
+
+footer p {
+    color: rgba(255, 255, 255, 0.72);
     align-self: center;
     cursor: pointer;
 }
-footer ul 
-{
+
+footer ul {
     align-self: center;
     list-style-type: none;
 }
+
 /*#endregion*/
 
 /*#region Google map*/
-.Gmap 
-{
+.Gmap {
     text-align: center;
     padding: 20px;
     margin: 90px auto auto auto;
 }
-.Gmap ul li
-{
+
+.Gmap ul li {
     cursor: pointer;
     list-style: none;
     display: inline-block;
@@ -209,12 +209,13 @@ footer ul
 }
 
 .mapouter {
-    margin:  15px auto;
+    margin: 15px auto;
     position: relative;
     text-align: right;
     height: 588px;
     width: 858px;
 }
+
 .gmap_canvas {
     margin: 20px 0 20px 0;
     overflow: hidden;
@@ -222,29 +223,214 @@ footer ul
     height: 588px;
     width: 858px;
 }
+
 /*#endregion*/
 
+.Shopcart {
+    border: 1px solid rgba(203, 54, 54, 0.5);
+    border-radius: 5px;
+    background-color: rgba(203, 54, 54, 0.5);
+    max-width: 4vw;
+    position: sticky;
+    bottom: 0;
+    transition: max-width 1s ease-in-out;
+    overflow: hidden;
+}
 
+.Shopcart:hover {
+
+    max-width: 10vw;
+}
 
 /*#region KEYFRAMES*/
-@keyframes ArrowBounceLeft 
-{
-    0% {transform: translateX(0%);}
-    50% {transform: translateX(-10%);}
-    100% {transform:translateX(0%);}
-}
-@keyframes ArrowBounceRight 
-{
-    0% {transform: translateX(0%);}
-    50% {transform: translateX(-10%);}
-    100% {transform:translateX(0%);}
-}
-@keyframes SlideUp {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(0%);}
+@keyframes ArrowBounceLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
+@keyframes ArrowBounceRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideUp {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes left-to-center {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes right-to-center {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes center-to-left {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes center-to-right {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes animateInfo {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        height: 10%;
+        opacity: 1;
+    }
+}
+
+@keyframes green-to-tp {
+    0% {
+        background-color: rgba(0, 128, 0, 0.75)
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0)
+    }
+}
+
+@keyframes tp-to-green {
+    0% {
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    100% {
+        background-color: rgb(0, 128, 0)
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /*#endregion*/
+#pictures {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
 
+.imgs {
+    background-size: cover;
+    height: 100%;
+    width: 60vw;
+}
 
+#img {
+    position: relative;
+    left: 0;
+}
+
+#img-before {
+    position: absolute;
+    left: -100%;
+
+}
+
+#img-after {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+#info {
+    height: 0;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.75);
+    display: none;
+}
+
+#info h1 {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    font-size: xx-large;
+}
+
+#info button {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    float: right;
+    font-size: 100%;
+    height: 100%;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
