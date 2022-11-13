@@ -4,20 +4,24 @@
     box-sizing: border-box;
 }
 html {
+    background: url(./BG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
 
 main 
 {
+    background-color: rgba(59, 59, 59, 0.65);
     margin: auto;
     width: 1192px;
-    box-shadow: 10px 5px 5px rgba(146, 255, 150, 0.45);
 }
 .flex-nav 
 {
     overflow: visible;
     z-index: 100;
-    background-color: rgba(193,93,20, 1);
+    background-color: rgba(153, 75, 76, 0.806);
     border: 2px solid transparent;
     top: 0;
     width: 100%;
@@ -62,10 +66,6 @@ main
     display: grid;
     height: 500px;
 }
-svg circle
-{
-    overflow: visible;
-}
 
 /*#region Main Section*/
 .container div[class^="item"] 
@@ -78,8 +78,14 @@ svg circle
     border: 2px solid rgba(221,181, 94, 0.78);
     background-color: transparent;
     justify-content: center;
+    transition: transform 0.43s ease-in-out;
 }
-
+.container div[class^="item"]:hover
+{
+    text-decoration: underline;
+    transform: translateX(-5px);
+    
+}
 
 .container div[class^="item"] p 
 {
@@ -88,13 +94,14 @@ svg circle
     text-align: center;
     transform: rotate(-90deg);
 }
+
+
 #Main 
 {
     border-radius: 10px 0 0;
     align-items: center;
     position: relative;
     display: flex;
-    background-color: green;
     grid-column-start: 2;
     grid-row: 1 / 4;
     width: 79.65%;
@@ -160,6 +167,7 @@ svg circle
     background-color: rgba(0, 0, 0, 0);
 }
 /*#endregion*/
+
 /*#region footer*/
 footer 
 {
@@ -183,34 +191,12 @@ footer ul
 }
 /*#endregion*/
 
-
-/*#region KEYFRAMES*/
-@keyframes ArrowBounceLeft 
-{
-    0% {transform: translateX(0%);}
-    50% {transform: translateX(-10%);}
-    100% {transform:translateX(0%);}
-}
-@keyframes ArrowBounceRight 
-{
-    0% {transform: translateX(0%);}
-    50% {transform: translateX(-10%);}
-    100% {transform:translateX(0%);}
-}
-@keyframes SlideUp {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(0%);}
-}
-
-/*#endregion*/
-
-
 /*#region Google map*/
 .Gmap 
 {
     text-align: center;
     padding: 20px;
-    margin: 60px auto;
+    margin: 90px auto auto auto;
 }
 .Gmap ul li
 {
@@ -237,3 +223,28 @@ footer ul
     width: 858px;
 }
 /*#endregion*/
+
+
+
+/*#region KEYFRAMES*/
+@keyframes ArrowBounceLeft 
+{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(-10%);}
+    100% {transform:translateX(0%);}
+}
+@keyframes ArrowBounceRight 
+{
+    0% {transform: translateX(0%);}
+    50% {transform: translateX(-10%);}
+    100% {transform:translateX(0%);}
+}
+@keyframes SlideUp {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+
+/*#endregion*/
+
+
