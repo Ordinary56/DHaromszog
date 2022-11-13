@@ -6,13 +6,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+main 
+{
+    margin: auto;
+    width: 1192px;
+    box-shadow: 10px 5px 5px rgba(146, 255, 150, 0.45);
+}
 .flex-nav 
 {
     overflow: visible;
     z-index: 100;
-    background-color: rgba(93,73,50, 1);
-    border-radius:0 0 25px 25px;
-    border: 3px solid transparent;
+    background-color: rgba(193,93,20, 1);
+    border: 2px solid transparent;
     top: 0;
     width: 100%;
     position: sticky;
@@ -46,19 +52,14 @@ html {
    transition-duration: 1.3s;
    color: aqua;
 }
-section
- {
-    display: contents;
-    height: 100%;
- }
 .container 
 {
-    grid-template-columns: 300px 100%;
-    row-gap: 7px;
-    column-gap: 5px;
+    margin: auto;
+    max-width: min-content;
+    grid-template-columns: 200px 100%;
+    row-gap: 3px;
+    column-gap: 4px;
     display: grid;
-    border: 1px solid transparent;
-    box-shadow: 10px 5px 5px rgba(146, 255, 150, 0.65);
     height: 500px;
 }
 svg circle
@@ -73,55 +74,115 @@ svg circle
     display:flex;
     max-width: 100%;
     align-items: center;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: green;
+    border-radius: 4px;
+    border: 2px solid rgba(221,181, 94, 0.78);
+    background-color: transparent;
     justify-content: center;
 }
+
+
 .container div[class^="item"] p 
 {
-
+    font: 1.54em sans-serif;
     max-width: fit-content;
     text-align: center;
     transform: rotate(-90deg);
 }
-.Main 
+#Main 
 {
     border-radius: 10px 0 0;
     align-items: center;
-
+    position: relative;
     display: flex;
     background-color: green;
     grid-column-start: 2;
-    grid-row-start: 1;
     grid-row: 1 / 4;
+    width: 79.65%;
+    background-size:cover;
 }
-.Main .Image-slider 
+#Main .Image-slider 
 {
-    width: 70vw;
+    width: 60vw;
 }
-.Main button[class|="navbutton"]
+#Main button[class|="navbutton"]
 {
     text-align: center;
     height: 100%;
     cursor: pointer;
     font-size: larger;
-    color: white;
+    font-weight: bolder;
+    color: black;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     border-color: transparent;
-    width: 2rem;
+
     background-color: transparent;
 }
-
+.navbutton-L{
+    position: absolute;
+    left: 5%;
+}
+.navbutton-R{
+    position: absolute;
+    right: 5%;
+}
 .navbutton-L:hover 
 {
-    animation: ArrowBounceLeft  infinite 0.5s;
+    animation: ArrowBounceLeft  infinite 0.54s;
 }
 
 .navbutton-R:hover 
 {
-    animation: ArrowBounceRight infinite 0.5s;
+    animation: ArrowBounceRight infinite 0.54s;
+}
+#navigation {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    position:absolute;
+    width: 0.2em;
+    height: 0.2em;
+    border: 0.4em solid black;
+    background-color: black;
+    border-radius: 50%;
+}
+#selected{
+    position:absolute;
+    width: 1.1em;
+    height: 1.1em;
+    border: 0.1em solid black;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
 }
 /*#endregion*/
+/*#region footer*/
+footer 
+{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.86);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+footer p 
+{
+    color:rgba(255, 255, 255, 0.72);
+    align-self: center;
+    cursor: pointer;
+}
+footer ul 
+{
+    align-self: center;
+    list-style-type: none;
+}
+/*#endregion*/
+
 
 /*#region KEYFRAMES*/
 @keyframes ArrowBounceLeft 
@@ -136,5 +197,43 @@ svg circle
     50% {transform: translateX(-10%);}
     100% {transform:translateX(0%);}
 }
+@keyframes SlideUp {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
 
+/*#endregion*/
+
+
+/*#region Google map*/
+.Gmap 
+{
+    text-align: center;
+    padding: 20px;
+    margin: 60px auto;
+}
+.Gmap ul li
+{
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.mapouter {
+    margin:  15px auto;
+    position: relative;
+    text-align: right;
+    height: 588px;
+    width: 858px;
+}
+.gmap_canvas {
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+    background: none !important;
+    height: 588px;
+    width: 858px;
+}
 /*#endregion*/
