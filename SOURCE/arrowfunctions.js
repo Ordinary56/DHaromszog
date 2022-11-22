@@ -46,6 +46,7 @@ function UpdateInfo() {
         document.getElementById("info-button").style.backgroundColor = "rgba(0,0,0,0)";
     }else if (selectedFood.selected == true) {
         document.getElementById("info-button").style.backgroundColor= "rgba(0,180,0,0.75)";
+
     } 
 }
 

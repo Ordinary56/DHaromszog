@@ -8,23 +8,20 @@
     <title>Étterem</title>
     <link rel="stylesheet" href="Style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-   
-   
+
+
 
 </head>
 
 <body>
     <main>
-        <div style="margin: 20px auto; text-align:center;">
-            <img src="./Étterem/Images/Logo.png" alt="" srcset="" height="400" width="500">
-        </div>
         <div class="flex-nav">
             <nav>
                 <ul>
                     <a href="#">
                         <li>Ételek</li>
                     </a>
-                    <a href="#">
+                    <a href="#Menu">
                         <li>Italok</li>
                     </a>
                     <img src="./Étterem/Images/Logo.png" alt="logo" width="75" height="60"
@@ -37,6 +34,22 @@
 
             </nav>
         </div>
+        <div style="margin: 20px auto; text-align:center;">
+            <img src="./Étterem/Images/Logo.png" alt="" srcset="" height="200" width="250">
+            <h1>Mekó Andi Étterem</h1>
+            <ul style="list-style-type: none;" id="Menu">
+                <li><img src="./Étterem/Images/START_Italok.png" alt=""width="220" height="200"><br>
+                    <p>Italok</p>
+                </li>
+                <li><img src="./Étterem/Images/START_LEVESEK.png" alt=""width="220" height="200"><br>
+                    <p>Levesek</p>
+                </li>
+                <li><img src="./Étterem/Images/START_Desszert.png" alt=""width="220" height="200"><br><p>Desszertek</p></li>
+                <li><img src="./Étterem/Images/START_Koret.png" alt=""width="220" height="200"><br><p>Köretek</p></li>
+                <li><img src="./Étterem/Images/START_MENU.png" alt=""width="220" height="200"><br><p>Napi Menü</p></li>
+            </ul>
+        </div>
+
 
         <!--Main Section/Food list-->
         <section id="menu">
@@ -44,17 +57,19 @@
                 <div onclick="ChangeType('leves'),SetActive('levesek')" id="levesek" class="item-1">
                     <p>Levesek</p>
                 </div>
-                <div onclick="ChangeType('foetel'),SetActive('foetelek')" id="foetelek"  class="item-2">
+                <div onclick="ChangeType('foetel'),SetActive('foetelek')" id="foetelek" class="item-2">
                     <p>Főételek</p>
                 </div>
-                <div  onclick="ChangeType('desszert'),SetActive('desszertek')" id="desszertek"  class="item-3">
+                <div onclick="ChangeType('desszert'),SetActive('desszertek')" id="desszertek" class="item-3">
                     <p>Desszertek</p>
                 </div>
                 <!--A képek ebbe a divbe mennek-->
                 <div id="Main">
                     <div id="pictures">
                         <div id="img-before" class="imgs"></div>
-                        <div id="img" class="imgs" onclick="RevealInfo()"><div id="info"></div></div>
+                        <div id="img" class="imgs" onclick="RevealInfo()">
+                            <div id="info"></div>
+                        </div>
                         <div id="img-after" class="imgs"></div>
                     </div>
                     <button class="navbutton-L" id="arrowLeft" onclick="MoveLeft()">⮜</button>
@@ -66,10 +81,12 @@
             <h1 style="color:rgba(158, 163, 82,0.5); font-size: 6rem; margin:auto auto 16px auto">Itt vagyunk.</h1>
             <h3 style="text-decoration:underline; color:rgba(158, 163, 82,0.5);"> Debrecen 4025 Széchenyi u. 58.</h3>
             <ul>
-                <li><img src="./Étterem//Images/Fb.png" alt="" height="32" width="40" style="transform: translateY(1%);"></li>
+                <li><img src="./Étterem//Images/Fb.png" alt="" height="32" width="40"
+                        style="transform: translateY(1%);"></li>
                 <li><img src="./Étterem//Images/insta.jpg" alt="" srcset="" height="30" width="30"></li>
                 <li><img src="./Étterem/Images/pinterest.png" alt="" height="29" width="29"></li>
-                <li><img src="./Étterem/Images/email.png" alt="" width="35" height="35" style="transform: translateY(11%);"></li>
+                <li><img src="./Étterem/Images/email.png" alt="" width="35" height="35"
+                        style="transform: translateY(11%);"></li>
             </ul>
             <div class="mapouter">
                 <div class="gmap_canvas"><iframe width="858" height="588" id="gmap_canvas"
@@ -81,7 +98,7 @@
 
             </div>
         </section>
-       
+
         <footer class="footer">
             <a href="./nyilatkozat.html" style="text-decoration: none; color:black;">
                 <p>Adatvédelem</p>
@@ -94,7 +111,7 @@
             </a>
             <p>Mekó Andi Étterem<sup>®</sup></p>
         </footer>
-    </main> 
+    </main>
     <!-- #region Scroll reveal JS -->
     <script>
         var sr = ScrollReveal({
@@ -110,11 +127,11 @@
         sr.reveal('.Gmap', { origin: 'right', duration: 2100 })
 
     </script>
-    <!--#endregion-->  
+    <!--#endregion-->
     <script defer src="./arrowfunctions.js"></script>
     <script defer src="./changemenu.js"></script>
-     <script defer src="./Food.js"></script>
-     <script defer src="./loadpage.js"></script>    
+    <script defer src="./Food.js"></script>
+    <script defer src="./loadpage.js"></script>
     <script defer src="main.js"></script>
 </body>
 
