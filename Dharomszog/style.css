@@ -1,0 +1,8 @@
+.Form {
+    border-radius: 5px;
+    box-shadow: 6px 9px orange;
+    background-color:antiquewhite;
+}
+.Main  {
+    max-width: 650px;
+}
